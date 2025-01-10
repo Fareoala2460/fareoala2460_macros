@@ -1,0 +1,6 @@
+<script>
+function playVideo() {
+    var iframe = document.getElementById("ytVideo");
+    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+}
+</script>
